@@ -37,7 +37,7 @@ class LocationDataSource(
         }
         // clean up when Flow collection ends
         awaitClose {
-            Timber.e("Location request removed")
+//            Timber.e("Location request removed")
             locationClient.removeLocationUpdates(callback)
         }
     }
